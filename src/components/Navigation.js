@@ -5,12 +5,12 @@ import {Link} from "react-router-dom";
 function Navigation() {
     return (
         <>
-            <div className="navigation-container  position-fixed ">
-                <div className="logged-in float-lg-end mx-lg-5 d-md-flex justify-content-md-center my-3 ">
+            <div className="navigation-container position-fixed ">
+                <div className="logged-in d-md-flex justify-content-md-center justify-content-lg-end  my-3 ">
                     <button className="login btn ">Zaloguj</button>
                     <button className="sign-in btn border">Załóż konto</button>
                 </div>
-                <Navbar className=" top-0 w-100 navigation " expand="lg">
+                <Navbar className="top-0  navigation float-lg-end " expand="lg">
                     <Container >
                         <Navbar.Toggle className="button-nav" aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">

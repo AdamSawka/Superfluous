@@ -1,22 +1,25 @@
-.navigation-container{
-  max-width: 750px;
-  margin-left: 35vw;
-.login, .sign-in{
-  font: normal normal normal 14px/18px Open Sans;
-  color: $--gray_color;
+.navigation-container {
+  width: 100%;
+  max-width: 1700px;
 
-}
-  .button-nav{
+  .logged-in {
+    margin-right: 40px;
+
+    .login, .sign-in {
+      font: normal normal normal 14px/18px Open Sans;
+      color: $--gray_color;
+    }
+  }
+
+  .button-nav {
     margin: 0 auto;
   }
 
-  .text-reset{
+  .text-reset {
     text-decoration: none;
     font: normal normal normal 18px/24px Open Sans;
     color: $--dark_color;
-
   }
-
 }
 
 

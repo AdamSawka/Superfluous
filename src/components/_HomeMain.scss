@@ -1,11 +1,37 @@
-.home-main{
+.home-main {
   width: 100%;
   height: 100vh;
 
-  .main-img{
+
+  .main-img {
     position: absolute;
+
     z-index: -1;
-    left: -490px ;
+    left: -30vw;
   }
+
+  .main-content {
+    top: 350px;
+    right: 160px;
+    max-width: 674px;
+    .main-content-title{
+      font:  30px Open Sans;
+      letter-spacing: -0.76px;
+      color: $--dark_color;
+      text-align: center;
+    }
+    .main-content-button{
+      width: 285px;
+      height: 100px;
+      margin: 50px 22px;
+      font: normal normal 300 30px Open Sans;
+      text-transform: uppercase;
+      color: $--dark_color;
+
+    }
+
+
+  }
+
 
 }
