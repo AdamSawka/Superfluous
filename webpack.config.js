@@ -5,7 +5,7 @@ const entryPath = '.';
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: './' + path.join(entryPath, 'src/index.js'),
+  entry: './' + path.join(entryPath, 'js/app.js'),
   output: {
     filename: 'out.js',
     path: path.resolve(__dirname, path.join(entryPath, 'build')),
