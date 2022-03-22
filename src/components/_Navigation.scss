@@ -1,9 +1,14 @@
-.container{
-  max-width: 1240px ;
+.navigation-container{
+  max-width: 750px;
+  margin-left: 35vw;
 .login, .sign-in{
   font: normal normal normal 14px/18px Open Sans;
   color: $--gray_color;
+
 }
+  .button-nav{
+    margin: 0 auto;
+  }
 
   .text-reset{
     text-decoration: none;

@@ -1,6 +1,7 @@
 import React from "react"
-import Navigation from "./components/Navigation"
 import {BrowserRouter} from "react-router-dom";
+import HomeMain from "./components/HomeMain";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
@@ -8,10 +9,8 @@ function App() {
        <div className="app">
            <BrowserRouter>
                <Navigation/>
-
+               <HomeMain/>
            </BrowserRouter>
-
-
        </div>
 
    </>
