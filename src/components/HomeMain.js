@@ -11,9 +11,14 @@ function HomeMain() {
                 <img className="main-img" src={HomeHeroImage} alt="main-img"/>
                 <div className="main-content  ">
                     <h1 className="main-content-title">Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
-                    <img className="decoration" src={Decoration} alt="decoration"/>
-                    <button className="main-content-button">Oddaj rzeczy</button>
-                    <button className="main-content-button">Zorganizuj zbiórkę</button>
+                    <div className="decoration-box">
+                        <img className="decoration" src={Decoration} alt="decoration"/>
+                    </div>
+                    <div className="main-buttons">
+                        <div className="main-content-button"><a className="btn-text" href="/">Oddaj rzeczy</a></div>
+                        <div className="main-content-button"><a  className="btn-text" href="/">Zorganizuj zbiórkę</a></div>
+                    </div>
+
                 </div>
             </div>
             <HomeInfo/>

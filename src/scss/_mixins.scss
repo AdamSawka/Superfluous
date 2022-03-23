@@ -8,3 +8,16 @@
   color: $--gray_color;
   transition: 0.2s;
 }
+@mixin text-reset{
+  padding: 10px 10px;
+  text-decoration: none;
+  font: normal normal normal 18px/24px Open Sans;
+  color: $--dark_color;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+@mixin mobile{
+  @media screen and (max-width: 1248px){
+    @content
+  }
+}
