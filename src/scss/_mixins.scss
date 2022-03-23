@@ -1,23 +1,33 @@
+body{
+  font-family: $font-base;
+}
+
+
 @mixin btn {
   margin: 10px;
   padding: 10px;
   background-color: transparent;
   border: 1px solid #bbb;
   border-radius: 4px;
-  font: normal normal normal 14px/18px Open Sans;
+  font-size: 14px;
   color: $--gray_color;
   transition: 0.2s;
 }
 @mixin text-reset{
   padding: 10px 10px;
   text-decoration: none;
-  font: normal normal normal 18px/24px Open Sans;
+  font-size: 18px;
   color: $--dark_color;
   border: 1px solid transparent;
   border-radius: 5px;
 }
-@mixin mobile{
-  @media screen and (max-width: 1248px){
-    @content
-  }
+@mixin large{
+  @media screen and (max-width: 1248px) {@content;}
+}
+
+@mixin medium{
+  @media (max-width: 920px) {@content;}
+}
+@mixin small{
+  @media (max-width: 480px) {@content;}
 }

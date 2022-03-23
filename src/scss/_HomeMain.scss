@@ -3,7 +3,7 @@
   height: 100vh;
 
   .main-img {
-    @include mobile {
+    @include large {
       right: 560px;
     }
     position: absolute;
@@ -19,7 +19,7 @@
     max-width: 674px;
 
     .main-content-title {
-      font: 30px Open Sans;
+      font: 30px $font-base;
       letter-spacing: -0.76px;
       color: $--dark_color;
       text-align: center;
@@ -54,7 +54,7 @@
           padding: 30px 50px;
           text-decoration: none;
           color: $--gray_color;
-          font: normal normal 300 30px Open Sans;
+          font: normal normal 300 30px $font-base;
           text-transform: uppercase;
 
           &:hover {

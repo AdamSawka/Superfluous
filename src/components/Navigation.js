@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom";
+import menuIcon from "../assets/menu-button.png"
 
 function Navigation() {
     return (
@@ -9,8 +10,8 @@ function Navigation() {
                     <button className="login nav-btn ">Zaloguj</button>
                     <button className="sign-in nav-btn ">Załóż konto</button>
                 </div>
+                <button className="button-nav"><img src={menuIcon} alt="menu button"/></button>
                 <nav className="navigation-content">
-                    <button className="button-nav"/>
                     <ul>
                         <li className="nav-item" aria-current="page"><Link className='text-reset'
                                                                                   to='main'>Start</Link></li>
