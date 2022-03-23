@@ -1,0 +1,10 @@
+@mixin btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font: normal normal normal 14px/18px Open Sans;
+  color: $--gray_color;
+  transition: 0.2s;
+}
