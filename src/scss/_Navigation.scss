@@ -11,10 +11,15 @@
 
     .login {
       @include btn;
+      text-decoration: none;
       border: 1px solid transparent;
 
       &:hover {
         border: 1px solid black;
+      }
+      .txt-login{
+        text-decoration: none;
+        color: $--dark_color;
       }
     }
 
@@ -24,10 +29,13 @@
       &:hover {
         border: 1px solid black;
       }
+      .txt-login{
+        text-decoration: none;
+        color: $--dark_color;
+      }
     }
     @include medium{
-      margin: 0;
-      width: auto;
+   display: none;
     }
   }
 
@@ -38,25 +46,26 @@
     background-color: transparent;
     display: none;
     @include medium{
-      margin: 10px 0;
+      margin-top: 30px;
+      margin-left: 90vw;
       display: block;
     }
   }
 
   .navigation-content {
+    .text-reset {
+      @include text-reset;
+      transition: 0.2s;
+
+      &:hover {
+        border: 1px solid $--gray_color;
+
+      }
+    }
     .nav-item {
       display: inline-block;
       margin: 10px;
 
-      .text-reset {
-        @include text-reset;
-        transition: 0.2s;
-
-        &:hover {
-          border: 1px solid $--gray_color;
-
-        }
-      }
     }
     @include medium{
       display: none;
@@ -64,11 +73,8 @@
   }
   @include medium{
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    right: 0;
+
+
   }
 }
 

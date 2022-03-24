@@ -2,6 +2,7 @@ import React from "react"
 import HomeHeroImage from "../assets/Home-Hero-Image.jpg"
 import Decoration from "../assets/Decoration.svg"
 import HomeInfo from "./HomeInfo";
+import {Link} from "react-router-dom";
 
 function HomeMain() {
 
@@ -15,8 +16,8 @@ function HomeMain() {
                         <img className="decoration" src={Decoration} alt="decoration"/>
                     </div>
                     <div className="main-buttons">
-                        <div className="main-content-button"><a className="btn-text" href="/">Oddaj rzeczy</a></div>
-                        <div className="main-content-button"><a  className="btn-text" href="/">Zorganizuj zbiórkę</a></div>
+                        <div className="main-content-button"><Link className="btn-text" to="/login">Oddaj rzeczy</Link></div>
+                        <div className="main-content-button"><Link className="btn-text" to="/login">Zorganizuj zbiórkę</Link></div>
                     </div>
 
                 </div>

@@ -3,13 +3,18 @@
   height: 100vh;
 
   .main-img {
-    @include large {
-      right: 560px;
-    }
+    //width: 85vw;
     position: absolute;
     z-index: -1;
     right: 45vw;
-
+    @include large {
+      right: 560px;
+    }
+    @include medium {
+      top: 300px;
+      right: 0;
+      opacity: 0.3;
+    }
   }
 
   .main-content {
@@ -64,5 +69,20 @@
         }
       }
     }
+
+    @include medium {
+      position: static;
+      margin: 30px ;
+    }
+
+  }
+
+  @include medium {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 }

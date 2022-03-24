@@ -7,22 +7,18 @@ function Navigation() {
         <>
             <div className="navigation-container">
                 <div className="logged-in">
-                    <button className="login nav-btn ">Zaloguj</button>
-                    <button className="sign-in nav-btn ">Załóż konto</button>
+                    <button className="login nav-btn "><Link className="txt-login" to="/login">Zaloguj</Link></button>
+                    <button className="sign-in nav-btn "><Link className="txt-login" to="/sign-in">Załóż konto</Link>
+                    </button>
                 </div>
                 <button className="button-nav"><img src={menuIcon} alt="menu button"/></button>
                 <nav className="navigation-content">
                     <ul>
-                        <li className="nav-item" aria-current="page"><Link className='text-reset'
-                                                                                  to='main'>Start</Link></li>
-                        <li className="nav-item"><Link className='text-reset' to='#'>O co
-                            chodzi?</Link></li>
-                        <li className="nav-item"><Link className='text-reset' to='#'>O
-                            nas</Link></li>
-                        <li className="nav-item"><Link className='text-reset' to='#'>Fundacja
-                            i organizacje</Link></li>
-                        <li className="nav-item"><Link className='text-reset'
-                                                                       to='#'>Kontakt</Link></li>
+                        <Link className=' nav-item text-reset' to='main'>Start</Link>
+                        <Link className=' nav-item text-reset' to='#'>O co chodzi?</Link>
+                        <Link className=' nav-item text-reset' to='#'>O nas</Link>
+                        <Link className=' nav-item text-reset' to='#'>Fundacja i organizacje</Link>
+                        <Link className=' nav-item text-reset' to='#'>Kontakt</Link>
                     </ul>
                 </nav>
             </div>
