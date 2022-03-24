@@ -17,7 +17,8 @@
       &:hover {
         border: 1px solid black;
       }
-      .txt-login{
+
+      .txt-login {
         text-decoration: none;
         color: $--dark_color;
       }
@@ -29,52 +30,93 @@
       &:hover {
         border: 1px solid black;
       }
-      .txt-login{
+
+      .txt-login {
         text-decoration: none;
         color: $--dark_color;
       }
     }
-    @include medium{
-   display: none;
+
+    @include medium {
+      display: none;
     }
   }
 
   .button-nav {
+    position: relative;
+    transition: 0.5s;
     width: 32px;
     height: 32px;
-    border: none;
-    background-color: transparent;
     display: none;
-    @include medium{
-      margin-top: 30px;
-      margin-left: 90vw;
+    background-color: white;
+    z-index: 3;
+
+    @include medium {
+      margin: 30px;
+      margin-left: 87vw;
+      margin-bottom: 20px;
       display: block;
+      font-size: 36px;
+      &::before{
+        display: block;
+        background-color: white;
+        content: url("../assets/menu-button.png");
+        width: 40px;
+        height: 40px;
+      }
+      &:checked {
+        &::before{
+          content: url("../assets/close.png");
+          width: 40px;
+          height: 40px;
+        }
+        ~ .navigation-content {
+          margin-top: -80px;
+          background-color: white;
+          height: 240px;
+
+        }
+      }
     }
+
   }
 
   .navigation-content {
-    .text-reset {
-      @include text-reset;
-      transition: 0.2s;
+    transition: 0.5s;
 
-      &:hover {
-        border: 1px solid $--gray_color;
+    .nav-list {
+      position: relative;
+      .text-reset {
+        @include text-reset;
+        transition: 0.2s;
 
+        &:hover {
+          border: 1px solid $--gray_color;
+        }
+      }
+
+      .nav-item {
+        display: inline-block;
+        margin-top:7px;
+      }
+
+      @include medium {
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     }
-    .nav-item {
-      display: inline-block;
-      margin: 10px;
-
-    }
-    @include medium{
-      display: none;
+    @include medium {
+      margin-top: -370px;
+      height:300px;
     }
   }
-  @include medium{
-    width: 100vw;
 
-
+  @include medium {
+    width: 100%;
+    right: 0;
   }
 }
 
