@@ -4,6 +4,7 @@ import Icon_1 from "../assets/Icon-1.svg"
 import Icon_2 from "../assets/Icon-2.svg"
 import Icon_3 from "../assets/Icon-3.svg"
 import Icon_4 from "../assets/Icon-4.svg"
+import {Link} from "react-router-dom";
 
 
 function FourSteps (){
@@ -20,6 +21,8 @@ function FourSteps (){
                 <div className="steps-element steps-element3"><img src={Icon_3} alt=""/><h3>Zdecyduj komu chcesz pomóc</h3><br/><p>wybierz zaufane miejsce</p></div>
                 <div className="steps-element steps-element4"><img src={Icon_4} alt=""/><h3>Zamów kuriera</h3><br/><p>kurier przyjedzie w dogodnym terminie</p></div>
             </div>
+            <div className="steps-button"><Link className="btn-text" to="/login">Oddaj rzeczy</Link></div>
+
 
         </div>
 

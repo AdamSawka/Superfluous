@@ -40,33 +40,7 @@
       justify-content: space-between;
 
       .main-content-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 265px;
-        height: 100px;
-        margin: 50px 22px;
-        border: 1px solid $--gray_color;
-        border-radius: 4px;
-        text-align: center;
-        transition: 0.4s;
-
-        &:hover {
-          background-color: $--dark_color;
-        }
-
-        .btn-text {
-          padding: 30px 50px;
-          text-decoration: none;
-          color: $--gray_color;
-          font: normal normal 300 30px $font-base;
-          text-transform: uppercase;
-
-          &:hover {
-            color: $--light_color;
-
-          }
-        }
+        @include main-button;
         @include small{
           margin: 50px auto;
         }
