@@ -1,8 +1,9 @@
 import React from "react"
 import HomeHeroImage from "../assets/Home-Hero-Image.jpg"
 import Decoration from "../assets/Decoration.svg"
-import HomeInfo from "./HomeInfo";
-import {Link} from "react-router-dom";
+import HomeInfo from "./HomeInfo"
+import {Link} from "react-router-dom"
+import FourSteps from "./FourSteps";
 
 function HomeMain() {
 
@@ -23,6 +24,7 @@ function HomeMain() {
                 </div>
             </div>
             <HomeInfo/>
+            <FourSteps/>
         </>
     )
 }

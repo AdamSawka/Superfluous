@@ -1,0 +1,67 @@
+.steps-content {
+  .steps-title {
+    margin-top: 55px;
+
+    & > h2 {
+      text-align: center;
+      font: normal normal normal 38px/55px $font-base;
+      letter-spacing: -0.76px;
+      color: $--dark_color;
+      opacity: 1;
+      margin-bottom: 31px;
+    }
+
+    .steps-decoration {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 44px;
+    }
+  }
+
+  .steps-elements {
+    display: flex;
+    justify-content: center;
+    height: 325px;
+    background-color: $--light_color;
+
+    .steps-element {
+      position: relative;
+      width: 130px;
+      text-align: center;
+      margin: 73px 75px 0 75px;
+
+      & > img {
+        width: 83px;
+        height: 83px;
+        margin-bottom: 10px;
+      }
+
+      & > h3 {
+        font-size: 18px;
+        font-weight: normal;
+        &::before{
+          position: absolute;
+          width: 70px;
+          top: 119px;
+          left: 29px;
+          content: "";
+          border: 1px solid $--gray_color;
+        }
+      }
+
+      & > p {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    .steps-element3{
+      & h3{
+        &::before{
+          top: 138px;
+        }
+      }
+    }
+  }
+
+
+}
