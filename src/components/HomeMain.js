@@ -4,6 +4,7 @@ import Decoration from "../assets/Decoration.svg"
 import HomeInfo from "./HomeInfo"
 import {Link} from "react-router-dom"
 import FourSteps from "./FourSteps";
+import AboutUs from "./AboutUs";
 
 function HomeMain() {
 
@@ -25,6 +26,7 @@ function HomeMain() {
             </div>
             <HomeInfo/>
             <FourSteps/>
+            <AboutUs/>
         </>
     )
 }
