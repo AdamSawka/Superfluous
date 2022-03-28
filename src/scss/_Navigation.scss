@@ -1,13 +1,12 @@
 .navigation-container {
-  position: fixed;
+  position: absolute;
   right: 7vw;
   z-index: 3;
   background-color: #fff;
 
   .logged-in {
-    width: 100%;
-    margin-right: 5px;
-    margin-left: 69%;
+    width: 40%;
+    margin-left: 64%;
 
     .login {
       @include btn;

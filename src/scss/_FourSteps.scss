@@ -1,4 +1,5 @@
 .steps-content {
+  position: relative;
   .steps-title {
     margin-top: 55px;
 
@@ -20,7 +21,7 @@
 
   .steps-elements {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 325px;
     background-color: $--light_color;
 
@@ -28,7 +29,9 @@
       position: relative;
       width: 130px;
       text-align: center;
-      margin: 73px 75px 0 75px;
+      margin: 73px 15px 15px 15px;
+
+
 
       & > img {
         width: 83px;
@@ -53,6 +56,7 @@
         font-size: 16px;
         font-weight: normal;
       }
+
     }
     .steps-element3{
       & h3{
@@ -61,10 +65,15 @@
         }
       }
     }
+    @include small{
+      flex-wrap: wrap;
+      padding-bottom: 220px;
+    }
   }
   .steps-button{
     @include main-button;
     margin: 35px auto;
   }
+
 
 }

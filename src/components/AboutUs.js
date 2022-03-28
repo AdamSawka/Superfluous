@@ -1,5 +1,4 @@
 import React from "react"
-import About from "../assets/People.jpg"
 import Decoration from "../assets/Decoration.svg"
 import Signature from "../assets/Signature.svg"
 
@@ -7,6 +6,7 @@ function AboutUs() {
 
     return (
         <>
+            <section className="aboutUs">
             <div className="about-container">
                 <div className="about-description">
                     <h2>O nas</h2>
@@ -15,9 +15,10 @@ function AboutUs() {
                         quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                     <div className="about-signature"><img src={Signature} alt="signature"/></div>
                 </div>
-                <div className="about-img"><img src={About} alt=""/></div>
+                <div className="about-img"/>
 
             </div>
+            </section>
         </>
     )
 }
