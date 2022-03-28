@@ -5,6 +5,7 @@ import HomeInfo from "./HomeInfo"
 import {Link} from "react-router-dom"
 import FourSteps from "./FourSteps";
 import AboutUs from "./AboutUs";
+import Help from "./Help";
 
 function HomeMain() {
 
@@ -27,6 +28,7 @@ function HomeMain() {
             <HomeInfo/>
             <FourSteps/>
             <AboutUs/>
+            <Help/>
         </>
     )
 }
