@@ -7,6 +7,7 @@ import FourSteps from "./FourSteps";
 import AboutUs from "./AboutUs";
 import Help from "./Help";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function HomeMain() {
 
@@ -31,6 +32,7 @@ function HomeMain() {
             <AboutUs/>
             <Help/>
             <Contact/>
+            <Footer/>
         </>
     )
 }

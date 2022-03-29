@@ -1,0 +1,27 @@
+.footer{
+  margin-bottom: 12px;
+  .footer-copyright{
+    text-align: center;
+    @include small{
+      display: block;
+    }
+  }
+  .footer-social{
+    position: absolute;
+    bottom: 3px;
+    right: 10vw;
+    &>img{
+      margin-left: 20px;
+    }
+    @include small{
+      position: relative;
+      right: 0;
+      margin-top: 12px;
+    }
+  }
+ @include small {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+}
