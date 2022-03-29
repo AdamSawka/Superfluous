@@ -1,22 +1,30 @@
 .help-organizations {
   margin: 66px 48px 0 48px;
+  transition: 0.4s;
 
   .help-list-element {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
     border-bottom: 1px solid $--gray_color;
 
     .element-name {
       font-size: 26px;
       font-weight: normal;
+      margin-top: 15px;
 
     }
+
     .element-body {
       font-size: 18px;
-      margin-top: 12px;
+      margin: 12px;
     }
+    .element-description{
+      padding: 18px 0;
+    }
+  @include small{
+    flex-wrap: wrap;
+  }
 
   }
 

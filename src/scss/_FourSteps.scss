@@ -67,13 +67,15 @@
     }
     @include small{
       flex-wrap: wrap;
-      padding-bottom: 220px;
+      height: auto;
     }
   }
   .steps-button{
     @include main-button;
     margin: 35px auto;
+
   }
+
 
 
 }

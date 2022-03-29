@@ -6,6 +6,7 @@ import {Link} from "react-router-dom"
 import FourSteps from "./FourSteps";
 import AboutUs from "./AboutUs";
 import Help from "./Help";
+import Contact from "./Contact";
 
 function HomeMain() {
 
@@ -29,6 +30,7 @@ function HomeMain() {
             <FourSteps/>
             <AboutUs/>
             <Help/>
+            <Contact/>
         </>
     )
 }
