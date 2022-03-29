@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Dla dzieci",
+    "id": 1,
+    "type": "Fundation",
+    "description": "ubrania, meble, zabawki",
+    "body": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej."
+  },
+  {
+    "name": "Dbam o zdrowie",
+    "id": 2,
+    "type": "Fundation",
+    "description": "ubrania, jedzienie, AGD, meble, zabawki",
+    "body": "Pomoc dzieciom z ubogich rodzin."
+  },
+  {
+    "name": "Bez domu",
+    "id": 3,
+    "type": "Fundation",
+    "description": "ubrania, jedzienie, ciepłe koce",
+    "body": " Pomoc dla osób nie posiadających miejsca zamieszkania."
+  },
+  {
+    "name": "Organizacja 1",
+    "id": 4,
+    "type": "organization",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Organizacja 2",
+    "id": 5,
+    "type": "organization",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Organizacja 3",
+    "id": 6,
+    "type": "organization",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Organizacja 4",
+    "id": 7,
+    "type": "organization",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Organizacja 5",
+    "id": 8,
+    "type": "organization",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Organizacja 6",
+    "id": 9,
+    "type": "organization",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Organizacja 7",
+    "id": 10,
+    "type": "organization",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Zbiórka 1 ",
+    "id": 11,
+    "type": "fundraising",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Zbiórka 2 ",
+    "id": 12,
+    "type": "fundraising",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Zbiórka 3 ",
+    "id": 13,
+    "type": "fundraising",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Zbiórka 4 ",
+    "id": 14,
+    "type": "fundraising",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "name": "Zbiórka 5 ",
+    "id": 15,
+    "type": "fundraising",
+    "description": "Egestas, sed, tempus",
+    "body": "Ut, aliquam, purus, sit, amet"
+  }
+]

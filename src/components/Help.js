@@ -1,7 +1,26 @@
-import React from "react";
+import React, {useState, useEffect} from "react"
 import Decoration from "../assets/Decoration.svg"
+import Pagination from "./pagination/Pagination"
+import Organizations from "./pagination/Organizations"
+import org from "../organizations.json"
 
 function Help() {
+    const [organizations, setOrganizations] = useState([])
+    const [currentPage, setCurrentPage] = useState(1)
+    const [orgPerPage] = useState(3)
+
+
+    useEffect(() => {
+            setOrganizations(org)
+    }, [])
+    console.log(organizations);
+    // Get current posts
+    const indexOfLastOrg = currentPage * orgPerPage;
+    const indexOfFirstOrg = indexOfLastOrg - orgPerPage;
+    const currentOrganizations = organizations.slice(indexOfFirstOrg, indexOfLastOrg);
+
+    // Change page
+    const paginate = pageNumber => setCurrentPage(pageNumber);
 
     return (
         <>
@@ -19,9 +38,12 @@ function Help() {
                             W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz
                             sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
                         </p>
-                        <div className="help-carousel">
-
-
+                        <div className="help-list">
+                            <Organizations organizations={currentOrganizations} />
+                            <Pagination
+                                orgPerPage={orgPerPage}
+                                totalElements={organizations.length}
+                                paginate={paginate} />
                         </div>
                     </div>
 
