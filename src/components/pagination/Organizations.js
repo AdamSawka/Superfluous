@@ -1,15 +1,16 @@
 import React from 'react';
 
-const Organizations = ({ organizations }) => {
-    
+const Organizations = ({organizations}) => {
+
     return (
-        <ul className=' '>
+        <ul className='help-organizations'>
             {organizations.map(element => (
-                <li key={element.id} className=''>
-                    {element.name}
-                    {element.type}
-                    {element.description}
-                    {element.body}
+                <li key={element.id} className='help-list-element'>
+                    <div>
+                        <h3 className="element-name">{element.name}</h3>
+                        <p className="element-body">{element.description}</p>
+                    </div>
+                    <p className="element-description">{element.body}</p>
                 </li>
             ))}
         </ul>

@@ -1,0 +1,28 @@
+.help-organizations {
+  height: 500px;
+  margin: 66px 24px 0 24px;
+
+  .help-list-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid $--gray_color;
+
+    .element-name {
+      font-size: 26px;
+      font-weight: normal;
+
+
+    }
+
+    .element-body {
+      font-size: 18px;
+    }
+
+    .element-description {
+
+    }
+  }
+
+}
