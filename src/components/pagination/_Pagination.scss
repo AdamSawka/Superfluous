@@ -1,0 +1,25 @@
+.pagination{
+  margin-top: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  .pagination-item{
+  margin: 10px 20px;
+    &>a{
+      padding: 10px 15px;
+      text-decoration: none;
+      color: $--gray_color;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      transition: 0.3s;
+
+      &:hover{
+        border: 1px solid $--gray_color;
+      }
+    }
+
+  }
+
+
+}

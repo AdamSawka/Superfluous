@@ -11,7 +11,7 @@ const Pagination = ({orgPerPage, totalElements, paginate }) => {
         <nav>
             <ul className='pagination'>
                 {pageNumbers.map(number => (
-                    <li key={number} className='page-item'>
+                    <li key={number} className='pagination-item'>
                         <a onClick={(a) =>{
                             a.preventDefault();
                             paginate(number)

@@ -12,10 +12,10 @@ function Help() {
 
 
     useEffect(() => {
-            setOrganizations(org)
+        setOrganizations(org)
     }, [])
 
-    const Filter = organizations.filter(element =>element.type === type)
+    const Filter = organizations.filter(element => element.type === type)
 
     const indexOfLastOrg = currentPage * orgPerPage;
     const indexOfFirstOrg = indexOfLastOrg - orgPerPage;
@@ -32,12 +32,18 @@ function Help() {
                         <h3>Komu pomagamy?</h3>
                         <div className="help-decoration"><img src={Decoration} alt="decoration"/></div>
                         <div className="help-buttons">
-                            <button onClick={() =>{setType("fundation")
-                            }}  className="help-button">Fundacjom</button>
-                            <button onClick={() =>{setType("organization")
-                            }}  className="help-button">Organizacjom pozarządowym</button>
-                            <button onClick={() =>{setType("fundraising")
-                            }}  className="help-button">Lokalnym zbiórkom</button>
+                            <button onClick={() => {
+                                setType("fundation")
+                            }} className="help-button">Fundacjom
+                            </button>
+                            <button onClick={() => {
+                                setType("organization")
+                            }} className="help-button">Organizacjom pozarządowym
+                            </button>
+                            <button onClick={() => {
+                                setType("fundraising")
+                            }} className="help-button">Lokalnym zbiórkom
+                            </button>
                         </div>
                         <p className="help-description">
                             W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz
@@ -45,17 +51,15 @@ function Help() {
                         </p>
                         <div className="help-list">
 
-                            <Organizations organizations={currentOrganizations} />
+                            <Organizations organizations={currentOrganizations}/>
                             <Pagination
                                 orgPerPage={orgPerPage}
-                                totalElements={organizations.length}
-                                paginate={paginate} />
+                                totalElements={Filter.length}
+                                paginate={paginate}/>
                         </div>
                     </div>
 
-
                 </div>
-
             </section>
 
         </>

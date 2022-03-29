@@ -1,6 +1,5 @@
 .help-organizations {
-  height: 500px;
-  margin: 66px 24px 0 24px;
+  margin: 66px 48px 0 48px;
 
   .help-list-element {
     display: flex;
@@ -13,16 +12,12 @@
       font-size: 26px;
       font-weight: normal;
 
-
     }
-
     .element-body {
       font-size: 18px;
+      margin-top: 12px;
     }
 
-    .element-description {
-
-    }
   }
 
 }
